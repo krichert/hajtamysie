@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HAJTAMY SIĘ</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="heading">
+        <h1 id="title">hajtamy się!</h1>
+        <h2 id="countdown">00:00:00</p>
+    </section>
+    <section id="info">
+        <h1>Save the date!</h1>
+        <hr />
+        <h2>Serdecznie zapraszamy na wesele i ślub!</h2>
+        <img src ="./place.jpg"/>
+        <p>Gdzie?</p>
+        <p>
+            <span class="material-symbols-outlined">home</span>
+        </p>
+        <p>
+            <span class="material-symbols-outlined">location_on</span>
+        </p>
+        <p>Masz pytania?</p>
+        <p>
+            <span class="material-symbols-outlined">call</span>
+        </p>
+    </section>
+    <section id="confirmation">
+        <h1>Potwierdź obecność</h1>
+        <hr />
+        <form>
+            <label>Podaj imię i nazwisko</label>
+            <input />
+            <input type="submit" />
+        </form>
+    </section>
+    <section id="music">
+        <h1>Zatańczymy?</h1>
+        <hr />
+        <p>Wyślij nam swoje propozycje piosenek, wykonawców, typu muzyki jakie lubisz</p>
+        <form>
+            <input />
+            <input type="submit" value="+" />
+        </form>
+    </section>
+    <section id="games">
+        <h1>Jakie zabawy lubisz?</h1>
+        <hr />
+        <table id="container"></table>
+        <hr />
+        <p>Dodaj swoje propozycje</p>
+        <form>
+            <input />
+            <input type="submit" value="+"/>
+        </form>
+    </section>
+    <section id="photos">
+        <h1>Po zabawie prosimy dodaj zdjęcia</h1>
+        <hr />
+        <p>
+            <span class="material-symbols-outlined">folder_open</span>
+            link do dysku Google
+        </p>
+        
+    </section>
+    <footer>
+        with <span class="material-symbols-outlined">favorite</span> Weronika i Dominik
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBHlti5Yru7QqbG0xo3Fyunl0QGOdGCums",
+          authDomain: "hajtamysie-f1ce9.firebaseapp.com",
+          projectId: "hajtamysie-f1ce9",
+          storageBucket: "hajtamysie-f1ce9.appspot.com",
+          messagingSenderId: "286853611287",
+          appId: "1:286853611287:web:fa3720cdc0267243dd8152"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+    <script src="./countdown.js"></script>
+    <script src="./confirmation.js"></script>
+    <script src="./games.js"></script>
+    <script src="./music.js"></script>
+</body>
+</html>
