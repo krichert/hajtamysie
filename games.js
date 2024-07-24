@@ -12,9 +12,9 @@ function displayGames() {
         let games = '';
         data.forEach(game => {
             if (localData && localData[game.name]) {
-                games = games + '<tr><td>' + game.name + '</td><td><span class="material-symbols-outlined" style="margin-top: 18px;">recommend</span></td>' + '</tr>'
+                games = games + '<tr><td>' + game.name + '</td><td><span class="material-symbols-outlined material-symbols-outlined-fill" style="margin-top: 18px;">thumb_up</span></td>' + '</tr>'
             } else {
-                games = games + '<tr><td>' + game.name + '</td><td><button data-likes="'+ game.likes + '" data-id="'+ game.id + '" data-name="' + game.name +'" class="game-like-btn"><span class="material-symbols-outlined">thumb_up</span></button></td>' + '</tr>'
+                games = games + '<tr><td>' + game.name + '</td><td><a data-likes="'+ game.likes + '" data-id="'+ game.id + '" data-name="' + game.name +'" class="game-like-btn"><span class="material-symbols-outlined" style="margin-top: 18px;">thumb_up</span></a></td>' + '</tr>'
             }
         });
 

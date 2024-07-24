@@ -1,18 +1,22 @@
+/*
+#C8A19C
+#4C3A4A
+#754B61
+*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Parisienne';
-    background-color: #d8b37c;
-    /* color: #ada382; */
-    /* color: #b88566; */
-    color: #a65e4a;
-    font-size: 3em;
+    background-color: #C8A19C;
+    color: #4C3A4A;
+    font-size: 2em;
 }
 
 section {
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     flex-direction: column;
     padding: 50px;
     text-align: center;
@@ -20,27 +24,25 @@ section {
 
 section>hr {
     width: 200px;
-    border: 1px solid #bc9d35;
+    border: 1px solid #754B61;
     margin-bottom: 50px;
 }
 
 section:nth-child(odd) {
-    /* background-color: #a65e4a;
-    color: #d8b37c */
     background-color: #fff;
 }
 
 p {
     display: flex;
     justify-content: center;
-    align-items: center;  
-    margin: 15px 0;
+    align-items: center;
+    margin: 30px 0;
 }
 
 form {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     flex-direction: column;
 }
 
@@ -50,13 +52,13 @@ form input {
 
 input[type=submit] {
     font-size: 0.75em;
-    background-color: #a65e4a;
+    background-color: #754B61;
     color: #fff;
 }
 
 button {
     font-size: 0.75em;
-    background-color: #d8b37c;
+    background-color: #C8A19C;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -66,24 +68,24 @@ button {
     padding: 8px;
 }
 
-button .material-symbols-outlined {
-    margin: 0;
-}
-
 input {
     height: 80px;
     padding: 16px;
     border-radius: 10px;
     width: 100%;
-    border: none;
+    border: 1px solid #754B61;
 }
 
-section:nth-child(odd) input {
-    border: 1px solid #d8b37c;
-}
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px 1px #4C3A4A;
+    width: 50%;
+    border-radius: 1%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #4C3A4A;
 
-section:nth-child(odd) input[type=submit] {
-    background-color: #d8b37c;
 }
 
 .material-symbols-outlined {
@@ -91,8 +93,17 @@ section:nth-child(odd) input[type=submit] {
     margin-right: 15px;
 }
 
+.material-symbols-outlined-fill {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
 h1 {
     font-size: 1.5em;
+    text-shadow: #4C3A4A 0 0 2px;
 }
 
 h2 {
@@ -109,29 +120,51 @@ h2 {
 }
 
 #heading h1 {
-    font-size: 3em;
-    color: #d8b37c;
+    font-size: 2em;
+    text-shadow: #4C3A4A 0 0 5px;
 }
 
 #heading h2 {
-    font-size: 1.5em;
-    color: #d8b37c;
+    margin-top: 45px;
+}
+
+#heading div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: url('./assets/foto1.JPG');
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 15px 1px #4C3A4A;
+    border: 2px solid #4C3A4A;
+}
+
+#address div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#address a {
+    color: #4C3A4A;
+    text-decoration: none;
 }
 
 #countdown {
     width: 50%;
 }
 
-#info img {
-    max-width: 100%;
-    height: auto;
-}
-
-#music form, #games form {
+#music form,
+#games form {
     flex-direction: row;
 }
 
-#music form input[type=submit], #games form input[type=submit] {
+#music form input[type=submit],
+#games form input[type=submit] {
     width: 100px;
     font-size: 50px;
     padding: 0;
@@ -154,12 +187,26 @@ h2 {
 footer {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    background-color: #fff; 
+    align-items: center;
+    background-color: #C8A19C;
     padding: 50px 0;
 }
 
 footer .material-symbols-outlined {
     margin-right: 15px;
     margin-left: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #info p {
+        padding: 0 30px;
+    }
+
+    img {
+        width: 30%;
+    }
+}
+
+#myCanvas {
+    display: none;
 }
