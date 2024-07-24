@@ -28,7 +28,7 @@ section>hr {
     margin-bottom: 50px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #fff;
 }
 
@@ -209,4 +209,5 @@ footer .material-symbols-outlined {
 
 #myCanvas {
     display: none;
+    margin: auto;
 }
