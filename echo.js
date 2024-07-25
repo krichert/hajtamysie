@@ -51,10 +51,43 @@ document.addEventListener("keypress", function (event) {
         bounceBubbles();
 
         document.getElementById('myCanvas').style.display = 'block';
+        document.getElementById('echo').style.display = 'flex';
         const sections = document.getElementsByTagName('section')
         for (let section of sections) {
             section.style.display = 'none'
         }
     }
 });
+
+const heart = document.getElementById('heart');
+heart.addEventListener('click', () => {
+    const value = prompt('Echo?')
+    if (value === 'Kielona') {
+        stopNormal();
+        playEcho();
+
+        var myName = "Echo Kielona";
+
+        var red = [0, 100, 63];
+        var orange = [40, 100, 60];
+        var green = [75, 100, 40];
+        var blue = [196, 77, 55];
+        var purple = [280, 50, 60];
+        var letterColors = [red, orange, green, blue, purple];
+
+        drawName(myName, letterColors);
+
+        bubbleShape = 'circle';
+
+
+        bounceBubbles();
+
+        document.getElementById('myCanvas').style.display = 'block';
+        document.getElementById('echo').style.display = 'flex';
+        const sections = document.getElementsByTagName('section')
+        for (let section of sections) {
+            section.style.display = 'none'
+        }
+    }
+})
 
